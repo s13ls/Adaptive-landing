@@ -10,10 +10,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  overflow: scroll;
-}
-
 body.lock {
   overflow: hidden;
 }
@@ -314,13 +310,13 @@ body.lock {
     width: auto;
   }
   .header__buttons-1 {
-    margin: 0 0 10px 0;
     width: 200px;
     height: 50px;
   }
   .header__buttons-2 {
     width: 200px;
     height: 50px;
+    margin: 10px 0 0 0;
   }
   .header__buttons .container {
     margin: 0 auto;
@@ -341,7 +337,7 @@ body.lock {
   font-size: 15px;
   max-width: 640px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .about__row {
