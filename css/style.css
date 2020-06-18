@@ -123,6 +123,12 @@ body.lock {
   }
 }
 
+@media (max-width: 1200px) {
+  .header .header__arrow {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .header .header__row {
     height: 50px;
