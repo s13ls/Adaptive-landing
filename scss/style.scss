@@ -8,6 +8,12 @@
 a {
     text-decoration: none;
 }
+body {
+    overflow: scroll;
+}
+body.lock {
+    overflow: hidden;
+}
 
 .container {
     max-width: 1170px;
@@ -403,11 +409,15 @@ a {
         background-color: transparent;
     }
     @media(max-width: 768px){
+
         &__row {
             flex-direction: column;
         }
         &__container {
             margin-right: 0;
+        }
+        &__container-logo {
+            padding-left: 20px;
         }
     }
 }
