@@ -181,13 +181,13 @@ a {
   }
   .header .header__list {
     display: block;
-    padding: 0 10px 20px 10px;
+    padding: 60px 10px 20px 10px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
   .header .header__list li {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .header .header__list li:last-child {
     display: none;
