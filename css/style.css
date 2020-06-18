@@ -175,14 +175,28 @@ a {
   }
   .header .header__menu.active {
     left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header .header__list {
     display: block;
     padding: 0 10px 20px 10px;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
   }
   .header .header__list li {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .header .header__list li:last-child {
+    display: none;
+  }
+  .header .header__list li::after {
+    display: none;
+  }
+  .header .header__list li a {
+    color: #fff;
   }
 }
 
