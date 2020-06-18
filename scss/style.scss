@@ -94,6 +94,12 @@ a {
             
         }
     }
+    &__arrow {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 75px;
+    }
+
     @media(max-width: 1050px){
         li {
             margin-right: 20px;
@@ -153,7 +159,9 @@ a {
         .header__burger.active span {
             transform: scale(0);
         }
-
+        .header__arrow {
+            display: none;
+        }
         
 
         .header__menu {
@@ -277,6 +285,133 @@ a {
             }
         }
     }
+    
+    
 }
+
+//=== /header ===// 
+
+//=== about ===//
+
+.about {
+    text-align: center;
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+
+        margin: 115px 0 20px 0;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    &__row {
+        display: flex;
+        margin: 90px 0 ;
+
+    }
+
+    &__container {
+        text-align: center;
+        max-width: 270px;
+        margin-right: 125px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    &__container-logo {
+        margin-bottom: 30px;
+    }
+
+    &__container-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__container-subtitle {
+        font-size: 15px;
+    }
+    @media(max-width: 768px){
+        &__row{
+            flex-direction: column;
+        }
+    }
+}
+
+//=== /about ===//
+
+// === services
+.services {
+    text-align: center;
+    background-color: #E4FDF9;
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+
+        margin: 115px 0 20px 0;
+    }
+
+    &__row {
+        display: flex;
+        margin: 90px 0 ;
+    }
+
+    &__container {
+        max-width: 370px;
+        margin-right: 80px;
+        padding: 50px;
+        transition: all .3s;
+        &:hover {
+            background-color: #00897B;
+            color: #fff;
+            .services__container-logo {
+                color: #fff;
+            }
+            .services__btn {
+                color: #fff;
+                border: 2px solid #fff;
+            }
+            
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__container-logo {
+        margin-bottom: 30px;
+    }
+
+    &__container-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__container-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    &__btn {
+        width: 150px;
+        height: 50px;
+        border: 2px solid #000;
+        background-color: transparent;
+    }
+    @media(max-width: 768px){
+        &__row {
+            flex-direction: column;
+        }
+        &__container {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
 
 
