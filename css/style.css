@@ -187,6 +187,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    overflow: auto;
   }
   .header .header__list {
     display: block;

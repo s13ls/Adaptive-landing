@@ -178,6 +178,7 @@ a {
         .header__menu.active {
             left: 0;
             justify-content: center;
+            overflow: auto;
         }
 
         .header__list {
