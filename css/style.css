@@ -369,6 +369,9 @@ body.lock {
 }
 
 @media (max-width: 768px) {
+  .about__title {
+    margin: 50px 0 20px 0;
+  }
   .about__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -450,6 +453,9 @@ body.lock {
 }
 
 @media (max-width: 768px) {
+  .services__title {
+    margin: 50px 0 20px 0;
+  }
   .services__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
