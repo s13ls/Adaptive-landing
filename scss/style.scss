@@ -301,6 +301,10 @@ body.lock {
         }
     }
     @media(max-height: 500px){
+        .header__row {
+            height: 40px;
+            padding-top: 5px;
+        }
         .header__title{
             font-size: 40px;
         }
