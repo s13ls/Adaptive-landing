@@ -291,7 +291,7 @@ body.lock {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header__title {
     font-size: 40px;
     padding: 0 10px;
@@ -310,16 +310,26 @@ body.lock {
     width: auto;
   }
   .header__buttons-1 {
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 40px;
   }
   .header__buttons-2 {
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 40px;
     margin: 10px 0 0 0;
   }
   .header__buttons .container {
     margin: 0 auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .header .header__title {
+    font-size: 40px;
+  }
+  .header .header__subtitle {
+    font-size: 16px;
+    margin: 25px 0 25px 0;
   }
 }
 
