@@ -32,6 +32,7 @@ body.lock {
         position: fixed;
         width: 100%;
         background-color: #fff;
+        z-index: 3;
         &::before {
             content: '';
             position: absolute;
@@ -504,17 +505,18 @@ body.lock {
 
     &__blog-row {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__blog-container {
-        margin: 0 30px 30px 0;
+        margin: 0 15px 15px 0;
         &:last-child{
-            margin: 0 0 30px 0
+            margin: 0 0 15px 0
         }
     }
     @media(max-width: 1150px){
         &__blog-row {
-            flex-direction: column;
+           
         }
         &__blog-container {
             margin: 0 auto;
@@ -556,3 +558,133 @@ body.lock {
 //=== /works ===// 
 
 
+//=== plan ===// 
+
+.plan {
+
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        max-width: 640px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__container {
+        width: 370px;
+        height: 660px;
+        transition: all .3s;
+        &:hover{
+            box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        }
+    }
+
+    &__container-sqr {
+        z-index: 2;
+        width: 370px;
+        height: 210px;
+        background-color: #3949AB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        position: relative;
+        margin-bottom: 30px;
+        &::after{
+            content: ''; 
+            right: 0;
+            bottom: 0;
+            position: absolute; /* Абсолютное позиционирование */
+            border: 30px solid transparent; 
+            border-right: 370px solid #fff; 
+            border-bottom: 0px solid #fff;
+        }
+    }
+
+    &__container-title {
+        font-size: 25px;
+    }
+
+    &__container-price {
+        display: flex;
+        flex-direction: row;
+        &-1{
+            font-size: 50px;
+            padding-right: 5px;
+        }
+        &-text{
+            font-size: 15px;
+            padding-top: 30px;
+        }
+    }
+
+    &__container-description {
+        li {
+            text-align: center;
+            list-style: none;
+            font-size: 17px;
+            padding-bottom: 10px;
+            
+        }
+        span {
+            content: '';
+            margin: 0 auto;
+            display: block;
+            width: 178px;
+            height: 1px;
+            background-color: #707070;
+            margin-bottom: 30px;
+        }
+    }
+    &__container-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__container-btn {
+        margin-top: 65px;
+        width: 150px;
+        height: 50px;
+        border: 2px solid #000;
+        background-color: transparent;
+        transition: all .3s;
+        &:hover {
+            background-color: #00897B;
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+        }
+    }
+    @media(max-width: 1150px){
+        &__row {
+            flex-direction: column;
+        }
+        &__container{
+            width: 300px;
+            height: 550px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        &__container-sqr{
+            width: 300px;
+            height: 210px; 
+        }
+        &__container-btn{
+            margin-top: 25px;
+        }
+    }
+}

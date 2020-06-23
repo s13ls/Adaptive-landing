@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +33,7 @@ body.lock {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 3;
 }
 
 .header__bg::before {
@@ -526,23 +528,19 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .works__blog-container {
-  margin: 0 30px 30px 0;
+  margin: 0 15px 15px 0;
 }
 
 .works__blog-container:last-child {
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
 }
 
 @media (max-width: 1150px) {
-  .works__blog-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .works__blog-container {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -572,6 +570,168 @@ body.lock {
   .works__blog-container img {
     width: 320px;
     height: 320px;
+  }
+}
+
+.plan__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan__subtitle {
+  font-size: 15px;
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.plan__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan__container {
+  width: 370px;
+  height: 660px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.plan__container:hover {
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.plan__container-sqr {
+  z-index: 2;
+  width: 370px;
+  height: 210px;
+  background-color: #3949AB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.plan__container-sqr::after {
+  content: '';
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  border: 30px solid transparent;
+  border-right: 370px solid #fff;
+  border-bottom: 0px solid #fff;
+}
+
+.plan__container-title {
+  font-size: 25px;
+}
+
+.plan__container-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.plan__container-price-1 {
+  font-size: 50px;
+  padding-right: 5px;
+}
+
+.plan__container-price-text {
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+.plan__container-description li {
+  text-align: center;
+  list-style: none;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.plan__container-description span {
+  content: '';
+  margin: 0 auto;
+  display: block;
+  width: 178px;
+  height: 1px;
+  background-color: #707070;
+  margin-bottom: 30px;
+}
+
+.plan__container-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan__container-btn {
+  margin-top: 65px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #000;
+  background-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.plan__container-btn:hover {
+  background-color: #00897B;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1150px) {
+  .plan__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plan__container {
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .plan__container-sqr {
+    width: 300px;
+    height: 210px;
+  }
+  .plan__container-btn {
+    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
