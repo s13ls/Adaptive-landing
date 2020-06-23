@@ -459,8 +459,100 @@ body.lock {
         }
     }
 }
+//=== /services ===// 
 
+//=== works ===// 
 
+.works {
 
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    &__buttons {
+        text-align: center;
+        margin-bottom: 120px;
+        &-btn {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: transparent;
+            transition: all .3s;
+            &:hover {
+                background-color: #00897B;
+                color: #fff;
+                border: none;
+            }
+        }
+        
+    }
+
+    &__blog {
+    }
+    
+
+    &__blog-row {
+        display: flex;
+    }
+
+    &__blog-container {
+        margin: 0 30px 30px 0;
+        &:last-child{
+            margin: 0 0 30px 0
+        }
+    }
+    @media(max-width: 1150px){
+        &__blog-row {
+            flex-direction: column;
+        }
+        &__blog-container {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &:last-child{
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            img {
+                height: 320px;
+                width: 320px;
+            }
+        }
+        &__buttons{
+            &-btn {
+                margin-bottom: 10px;
+            }
+        }
+
+            
+           
+    }
+    @media(max-height: 500px){
+        &__blog-container {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &:last-child {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+}
+
+//=== /works ===// 
 
 
