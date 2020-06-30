@@ -314,6 +314,7 @@ body.lock {
   .header__buttons-1 {
     width: 170px;
     height: 40px;
+    margin-right: 0;
   }
   .header__buttons-2 {
     width: 170px;
@@ -719,20 +720,27 @@ body.lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
   .plan__container {
-    width: 360px;
-    height: 600px;
+    width: 320px;
+    height: 550px;
     margin: 0 auto;
     margin-bottom: 80px;
   }
   .plan__container-sqr {
-    width: 360px;
-    height: 210px;
+    width: 320px;
+    height: 170px;
     padding: 0 5px 0 5px;
   }
   .plan__container-btn {
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan__container-sqr::after {
+    border-right: 320px solid #fff;
   }
 }
 
@@ -762,7 +770,7 @@ body.lock {
 
 .team__block {
   text-align: center;
-  margin: 0 5px 0 5px;
+  margin: 0 20px;
 }
 
 .team__block img {

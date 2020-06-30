@@ -290,6 +290,7 @@ body.lock {
             &-1 {  
                 width: 170px;
                 height: 40px;
+                margin-right: 0;
             }
             &-2 {
                 width: 170px;
@@ -578,7 +579,7 @@ body.lock {
 
     &__row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;                                     
         
     }
 
@@ -672,20 +673,28 @@ body.lock {
     @media(max-width: 1150px){
         &__row {
             flex-direction: column;
+            margin: 0 auto;
         }
         &__container{
-            width: 360px;
-            height: 600px;
+            width: 320px;
+            height: 550px;
             margin: 0 auto;
             margin-bottom: 80px;
         }
         &__container-sqr{
-            width: 360px;
-            height: 210px; 
+            width: 320px;
+            height: 170px; 
             padding: 0 5px 0 5px;
         }
         &__container-btn{
             margin-top: 25px;
+        }
+    }
+    @media(max-width: 768px){
+        &__container-sqr {
+            &::after{
+                border-right: 320px solid #fff; 
+            }
         }
     }
 }
@@ -713,7 +722,7 @@ body.lock {
     }
     &__block {
         text-align: center;
-        margin: 0 5px 0 5px;
+        margin: 0 20px;
         img{
             max-width: 100%;
             max-height: 100%;
